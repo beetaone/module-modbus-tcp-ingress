@@ -4,7 +4,7 @@
 | -------------- | ------------------------------------- |
 | Name           | ModbusTCP Ingress                     |
 | Version        | v1.0.1                                |
-| Dockerhub Link | [weevenetwork/modbus-tcp-ingress](https://hub.docker.com/r/weevenetwork/modbus-tcp-ingress) |
+| Dockerhub Link | [beetaone/modbus-tcp-ingress](https://hub.docker.com/r/beetaone/modbus-tcp-ingress) |
 | authors        | Jakub Grzelak                         |
 
 - [ModbusTCP Ingress](#modbustcp-ingress)
@@ -12,7 +12,7 @@
   - [Supported TCP Functions](#supported-tcp-functions)
   - [Environment Variables](#environment-variables)
     - [Module Specific](#module-specific)
-    - [Set by the weeve Agent on the edge-node](#set-by-the-weeve-agent-on-the-edge-node)
+    - [Set by the beetaone Agent on the edge-node](#set-by-the-beetaone-agent-on-the-edge-node)
   - [Dependencies](#dependencies)
   - [Input](#input)
   - [Output](#output)
@@ -36,7 +36,7 @@ The following TCP functions are supported by this module
 
 ### Module Specific
 
-The following module configurations can be provided in a data service designer section on weeve platform:
+The following module configurations can be provided in a data service designer section on beetaone platform:
 
 | Name                | Environment Variables | type    | Description                                                                                                      |
 | ------------------- | --------------------- | ------- | ---------------------------------------------------------------------------------------------------------------- |
@@ -48,9 +48,9 @@ The following module configurations can be provided in a data service designer s
 | Interval Period     | INTERVAL_PERIOD       | integer | Data from registers is read every interval period                                                                |
 | Interval Unit       | INTERVAL_UNIT         | emum    | Unit for the time interval: ms (miliseconds), s (seconds), m (minute), h (hour), d (day)                         |
 
-### Set by the weeve Agent on the edge-node
+### Set by the beetaone Agent on the edge-node
 
-Other features required for establishing the inter-container communication between modules in a data service are set by weeve agent.
+Other features required for establishing the inter-container communication between modules in a data service are set by beetaone agent.
 
 | Environment Variables | type   | Description                                    |
 | --------------------- | ------ | ---------------------------------------------- |
